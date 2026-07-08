@@ -1,13 +1,27 @@
-const Home = () => {
+import { NavBar } from "@/components/sections/NavBar";
+import { Hero } from "@/components/sections/Hero";
+import { About } from "@/components/sections/About";
+import { Experience } from "@/components/sections/Experience";
+import { Education } from "@/components/sections/Education";
+import { Projects } from "@/components/sections/Projects";
+import { Skills } from "@/components/sections/Skills";
+import { Contact } from "@/components/sections/Contact";
+import { Footer } from "@/components/sections/Footer";
+
+export default function Home() {
   return (
-    <main
-    className="relative bg-background dark:bg-background flex justify-center items-center flex-col overflow-hidden"
-    aria-label="Página inicial do portfólio de Daniel Sebastian">
-       <div className="max-w-7xl w-full px-5 sm:px-10 ">
-        <h1>Helo World!</h1>
-       </div>
-    </main>
+    <>
+      <NavBar />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Education />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
-
-export default Home;
