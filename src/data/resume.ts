@@ -12,6 +12,7 @@ export interface Education {
   degree: string;
   period: string;
   status: string;
+  estimatedEnd?: string;
 }
 
 export interface ComplementaryEducation {
@@ -26,6 +27,8 @@ export interface Project {
   description: string;
   stack: string[];
   githubUrl?: string;
+  privateRepo?: boolean;
+  videoUrl?: string;
 }
 
 export interface SkillGroup {
@@ -35,11 +38,9 @@ export interface SkillGroup {
 
 export const resume = {
   name: "Daniel Sebastian Nunes Cavalcanti",
-  title: "Desenvolvedor Java Spring Backend | Angular | Next.js",
+  title: "Desenvolvedor Full Stack | Java · Spring Boot · C# · .NET | Angular · React · Next.js",
   email: "daniel.sebastian.nc@gmail.com",
-  phone: "(87) 99189-9798",
-  whatsapp: "https://wa.me/5587991899798",
-  github: "https://github.com/Daniel-SebastiaNC",
+github: "https://github.com/Daniel-SebastiaNC",
   linkedin: "https://linkedin.com/in/daniel-sebastian-nc",
   available: true,
 
@@ -50,20 +51,21 @@ export const resume = {
     { name: "Inglês", level: "A2–B1" },
   ],
 
-  mainStack: ["Java", "Spring Boot", "Angular", "React", "Next.js", "TypeScript", "PostgreSQL", "Docker"],
+  mainStack: ["Java", "Spring Boot", "C#", ".NET", "Angular", "React", "Next.js", "TypeScript", "PostgreSQL", "Docker"],
 
   experience: [
     {
-      company: "Naurial",
-      role: "Desenvolvedor FullStack",
-      type: "Freelance",
-      period: "Jun 2025 – Atual",
-      description: "Plataforma de Educação com IA.",
+      company: "Moura Tech – Grupo Moura",
+      role: "Desenvolvedor Full Stack",
+      type: "Programa de Formação",
+      period: "Mar 2026 – Atual",
+      description: "Programa intensivo de formação tecnológica do Grupo Moura.",
       highlights: [
-        "Features em JS/TS com Node.js e React/Next.js",
-        "Integração de IA de voz para transcrição e análise de conversas",
-        "IA generativa para quizzes personalizados",
-        "SCRUM com Jira e Git com PR/code review",
+        "Backend com C# e .NET; frontend com JavaScript, Node.js e React",
+        "Persistência de dados com SQL e NoSQL",
+        "IA como pair programming para escrita e revisão de código",
+        "Arquitetura de Redes, Segurança da Informação e visão de Negócios",
+        "Metodologias Ágeis em ambiente de alta organização",
       ],
     },
     {
@@ -97,14 +99,15 @@ export const resume = {
     {
       institution: "IFPE – Campus Belo Jardim",
       degree: "Bacharelado em Engenharia de Software",
-      period: "Ago 2025 – Jul 2029",
+      period: "Ago 2025 – Atual",
       status: "Em curso",
+      estimatedEnd: "Jul 2029",
     },
     {
       institution: "FIAP",
       degree: "Análise e Desenvolvimento de Sistemas",
       period: "Ago 2024 – Jul 2026",
-      status: "Em curso",
+      status: "Concluído",
     },
   ] as Education[],
 
@@ -116,6 +119,14 @@ export const resume = {
   ] as ComplementaryEducation[],
 
   projects: [
+    {
+      name: "Naurial",
+      period: "Jun 2025 – Atual",
+      description: "Plataforma de Educação com IA — features em TypeScript/Node.js e React/Next.js, integração de IA de voz para transcrição automática e análise de conversas, e IA generativa para criação de quizzes personalizados. Projeto em grupo com repositório privado.",
+      stack: ["Node.js", "React", "Next.js", "TypeScript", "JavaScript", "IA de voz", "IA generativa", "SCRUM", "Jira"],
+      privateRepo: true,
+      videoUrl: "https://www.linkedin.com/posts/daniel-sebastian-nc_buildinpublic-saas-ia-ugcPost-7357569323181162497-oO08/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETc3vYBgJdIvwoEeRbbXvvO53rqzHZUsik",
+    },
     {
       name: "LibraryManager",
       period: "Fev – Mar 2025",
@@ -133,11 +144,11 @@ export const resume = {
   ] as Project[],
 
   skills: [
-    { category: "Backend", skills: ["Java", "Spring Boot", "Spring Security", "Spring JPA"] },
+    { category: "Backend", skills: ["Java", "Spring Boot", "Spring Security", "Spring JPA", "C#", ".NET", "Node.js"] },
     { category: "Frontend", skills: ["Angular", "React", "Next.js", "TypeScript"] },
     { category: "Mobile / Embarcado", skills: ["Swift", "React Native", "C++"] },
     { category: "DevOps / Infra", skills: ["Docker", "AWS", "Git"] },
-    { category: "Banco de Dados", skills: ["PostgreSQL", "FlywayDB"] },
+    { category: "Banco de Dados", skills: ["PostgreSQL", "Oracle", "FlywayDB", "SQL", "NoSQL"] },
     { category: "Testes", skills: ["JUnit", "Mockito"] },
     { category: "Metodologias", skills: ["SCRUM", "Clean Code", "SOLID"] },
   ] as SkillGroup[],

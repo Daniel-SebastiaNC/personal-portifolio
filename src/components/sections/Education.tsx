@@ -34,6 +34,11 @@ export function Education() {
                   <h3 className="font-display font-semibold text-foreground mb-1">{edu.degree}</h3>
                   <p className="text-accent text-sm font-medium mb-1">{edu.institution}</p>
                   <p className="text-xs font-mono text-muted/60">{edu.period}</p>
+                  {edu.estimatedEnd && (
+                    <p className="text-xs font-mono text-muted/50 mt-0.5">
+                      Conclusão estimada: {edu.estimatedEnd}
+                    </p>
+                  )}
                 </Card>
               </motion.div>
             ))}
@@ -44,23 +49,34 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.4 }}
+            className="pt-8 border-t border-border/50"
           >
-            <h3 className="text-sm font-mono text-muted/60 uppercase tracking-widest mb-5">
-              Formação Complementar
-            </h3>
-            <div className="space-y-3">
-              {resume.complementaryEducation.map((item) => (
-                <div key={item.title} className="flex gap-3 text-sm">
-                  <span className="text-accent shrink-0 mt-0.5">›</span>
-                  <span className="text-muted">
-                    {item.title}
-                    <span className="text-muted/50 ml-2 font-mono text-xs">
-                      {item.provider} · {item.year}
-                    </span>
-                  </span>
-                </div>
-              ))}
-            </div>
+            <a
+              href="https://www.linkedin.com/in/daniel-sebastian-nc/details/certifications/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 group"
+            >
+              <h3 className="font-display text-lg font-semibold text-foreground group-hover:text-accent transition-colors">
+                Formação Complementar &amp; Certificações
+              </h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-muted group-hover:text-accent transition-colors"
+              >
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+            <p className="text-muted text-sm mt-1">Ver todas as certificações no LinkedIn →</p>
           </motion.div>
         </motion.div>
       </div>
