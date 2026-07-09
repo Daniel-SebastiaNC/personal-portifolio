@@ -20,20 +20,24 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Daniel Sebastian — Desenvolvedor Java Spring Backend | Angular | Next.js",
+  title: "Daniel Sebastian — Desenvolvedor Full Stack | Java · C# · .NET | Angular · React · Next.js",
   description:
-    "Portfólio de Daniel Sebastian Nunes Cavalcanti. Desenvolvedor backend com foco em Java e Spring Boot, com experiência em Angular, React e Next.js.",
+    "Portfólio de Daniel Sebastian Nunes Cavalcanti. Desenvolvedor Full Stack com experiência em Java, Spring Boot, C# e .NET no backend, e Angular, React e Next.js no frontend. Atualmente no Moura Tech – Grupo Moura.",
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
-    title: "Daniel Sebastian — Desenvolvedor Backend",
+    title: "Daniel Sebastian — Desenvolvedor Full Stack",
     description:
-      "Portfólio de Daniel Sebastian Nunes Cavalcanti. Backend Java/Spring, fullstack com Angular e Next.js.",
+      "Backend com Java, Spring Boot, C# e .NET. Frontend com Angular, React e Next.js. Portfólio de Daniel Sebastian Nunes Cavalcanti.",
     type: "website",
     locale: "pt_BR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Sebastian — Desenvolvedor Backend",
-    description: "Portfólio de Daniel Sebastian Nunes Cavalcanti.",
+    title: "Daniel Sebastian — Desenvolvedor Full Stack",
+    description:
+      "Backend com Java, Spring Boot, C# e .NET. Frontend com Angular, React e Next.js.",
   },
 };
 
